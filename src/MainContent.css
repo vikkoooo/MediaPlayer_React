@@ -10,13 +10,17 @@
 	color: whitesmoke;
 	display: flex;
 	flex-direction: column;
-	padding-top: 1rem;
+	padding-top: 2rem;
 	width: 100%;
 }
 
 .song {
+	align-items: center;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+	border-bottom: 0.4rem solid #122238;
 }
 
 .player {
