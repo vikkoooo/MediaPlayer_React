@@ -5,13 +5,13 @@ interface ISongProps {
 	data: ISong
 }
 
-export function Song(song: ISongProps): ReactElement {
+export function Song({ data }: ISongProps): ReactElement {
 	return (
 		<div className="song">
-			<p>image of song here</p>
+			<img src={data.imagepath} className="song-image" />
 			<div className="song-info">
-				<p className="artist-name">{song.data.artist}</p>
-				<p className="song-name">{song.data.name}</p>
+				<p className="artist-name">{data.artist}</p>
+				<p className="song-name">{data.name}</p>
 			</div>
 			<span className="material-symbols-outlined">play_circle</span>
 		</div>
