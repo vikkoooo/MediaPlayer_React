@@ -2,14 +2,18 @@ import { ReactElement } from "react";
 import { BackButton } from "./BackButton";
 import { MoreButton } from "./MoreButton";
 import { PlaylistName } from "./PlaylistName";
-import "./Header.css"
+import "./Header.css";
 
 export function Header(): ReactElement {
 	return (
 		<header className="header">
 			<BackButton />
-			<p className="header-text">Playlist -<PlaylistName /></p>
+			<div className="header-text-container">
+				<p className="playlist">Playlist</p>
+				<span className="material-symbols-outlined">remove</span>
+				<PlaylistName />
+			</div>
 			<MoreButton />
-		</header>
+		</header >
 	);
 }

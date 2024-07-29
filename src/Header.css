@@ -1,0 +1,13 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem;
+	background-color: #2d303d;
+	color: whitesmoke;
+}
+
+.header-text-container {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
