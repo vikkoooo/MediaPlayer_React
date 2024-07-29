@@ -1,0 +1,27 @@
+.main-container {
+	display: flex;
+	min-height: 100vh;
+	justify-content: space-around;
+}
+
+.songs {
+	background-color: #17273d;
+	border-right: 0.2rem solid #a8bbbf;
+	color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	padding-top: 1rem;
+	width: 100%;
+}
+
+.song {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.player {
+	background-color: #17263d;
+	border-left: 0.2rem solid #a8bbbf;
+	color: whitesmoke;
+	width: 100%;
+}
