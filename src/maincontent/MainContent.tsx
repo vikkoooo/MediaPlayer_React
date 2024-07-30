@@ -1,15 +1,15 @@
-import { ReactElement } from "react";
+import { ReactElement, useState } from "react";
 import { Playlist } from "./Playlist";
 import { Player } from "./Player";
-import "./MainContent.css";
 import { ISong } from "./Song";
 import { songdata } from "../data";
+import "./MainContent.css";
 
 export function MainContent(): ReactElement {
-	let selectedSong = songdata[0]; // start with default data
+	const [selectedSong, setSelectedSong] = useState<ISong>(songdata[0]);
 
 	const handleSongClick = (song: ISong) => {
-		selectedSong = song;
+		setSelectedSong(song);
 		console.log(selectedSong);
 	};
 
