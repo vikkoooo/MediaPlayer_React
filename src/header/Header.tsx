@@ -9,7 +9,7 @@ export function Header(): ReactElement {
 		<header className="header">
 			<BackButton />
 			<div className="header-text-container">
-				<p className="playlist">Playlist</p>
+				<p>Playlist</p>
 				<span className="material-symbols-outlined">remove</span>
 				<PlaylistName />
 			</div>

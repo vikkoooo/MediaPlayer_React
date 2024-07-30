@@ -1,4 +1,4 @@
-import { ISong } from "./interfaces";
+import { ISong } from "./maincontent/Song";
 
 export const songdata: ISong[] = [
 	{ id: "1", artist: "A rocket to the moon", name: "Like we used to", imagepath: "./covers/rocket.png" },

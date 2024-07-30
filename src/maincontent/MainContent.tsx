@@ -1,12 +1,12 @@
 import { ReactElement } from "react";
-import { Songs } from "./Songs";
+import { Playlist } from "./Playlist";
 import { Player } from "./Player";
 import "./MainContent.css";
 
 export function MainContent(): ReactElement {
 	return (
 		<main className="main-container">
-			<Songs />
+			<Playlist />
 			<Player />
 		</main>
 	);

@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { songdata } from "./data";
+import { songdata } from "../data";
 
 export function Player(): ReactElement {
 	return (

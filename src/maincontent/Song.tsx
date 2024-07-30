@@ -1,13 +1,20 @@
 import { ReactElement } from "react";
-import { ISong } from "./interfaces";
+
+export interface ISong {
+	id: string;
+	artist: string;
+	name: string;
+	imagepath: string;
+}
 
 interface ISongProps {
 	data: ISong
+	onSongClick: (song: ISong) => void; // i dont understand this
 }
 
-export function Song({ data }: ISongProps): ReactElement {
+export function Song({ data, onSongClick }: ISongProps): ReactElement {
 	return (
-		<div className="song">
+		<div className="song" onClick={() => onSongClick(data)}>{/*i dont understand this one*/}
 			<img src={data.imagepath} className="song-image" />
 			<div className="song-info">
 				<p className="artist-name">{data.artist}</p>
