@@ -3,11 +3,11 @@ header {
 	color: whitesmoke;
 	display: flex;
 	justify-content: space-between;
-	padding: 0.5rem;
+	padding: 1rem;
 }
 
 .header-text-container {
 	align-items: center;
 	display: flex;
-	gap: 0.5rem;
+	gap: 1rem;
 }
