@@ -1,16 +1,21 @@
 import { ReactElement } from "react";
-import { songdata } from "../data";
+//import { songdata } from "../data";
+import { ISong } from "./Song";
 
-export function Player(): ReactElement {
+interface PlayerProps {
+	song: ISong;
+}
+
+export function Player(prop: PlayerProps): ReactElement {
 	return (
 		<div className="player">
-			<img src={songdata[0].imagepath} className="song-image-large" />
+			<img src={prop.song.imagepath} className="song-image-large" />
 
 			<div className="player-info-row">
 				<span className="material-symbols-outlined">add_circle</span>
 				<div className="song-info">
-					<p className="artist-name">{songdata[0].artist}</p>
-					<p className="song-name">{songdata[0].name}</p>
+					<p className="artist-name">{prop.song.artist}</p>
+					<p className="song-name">{prop.song.name}</p>
 				</div>
 				<span className="material-symbols-outlined">favorite</span>
 			</div>

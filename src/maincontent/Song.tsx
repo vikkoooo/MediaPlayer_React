@@ -8,17 +8,17 @@ export interface ISong {
 }
 
 interface ISongProps {
-	data: ISong
-	onSongClick: (song: ISong) => void; // i dont understand this
+	song: ISong
+	onSongClick: (song: ISong) => void;
 }
 
-export function Song({ data, onSongClick }: ISongProps): ReactElement {
+export function Song(prop: ISongProps): ReactElement {
 	return (
-		<div className="song" onClick={() => onSongClick(data)}>{/*i dont understand this one*/}
-			<img src={data.imagepath} className="song-image" />
+		<div className="song" onClick={() => prop.onSongClick(prop.song)}>
+			<img src={prop.song.imagepath} className="song-image" />
 			<div className="song-info">
-				<p className="artist-name">{data.artist}</p>
-				<p className="song-name">{data.name}</p>
+				<p className="artist-name">{prop.song.artist}</p>
+				<p className="song-name">{prop.song.name}</p>
 			</div>
 			<span className="material-symbols-outlined">play_circle</span>
 		</div>
