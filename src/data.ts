@@ -7,5 +7,6 @@ export const songdata: ISong[] = [
 	{ id: "4", artist: "A rocket to the moon", name: "Dakota", imagepath: "./covers/rocket.png" },
 	{ id: "5", artist: "Zedd & Aloe Blacc", name: "Candyman", imagepath: "./covers/zedd.png" },
 	{ id: "6", artist: "Rag'n'Bone Man", name: "Human", imagepath: "./covers/rag.png" },
-	{ id: "7", artist: "Imagine Dragons", name: "Shots (Broiler Remix)", imagepath: "./covers/dragons.png" }
+	{ id: "7", artist: "Imagine Dragons", name: "Shots (Broiler Remix)", imagepath: "./covers/dragons.png" },
+	{ id: "8", artist: "Shaboozey", name: "A Bar Song (Tipsy)", imagepath: "./covers/bar.png" }
 ];

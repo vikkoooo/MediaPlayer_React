@@ -50,13 +50,17 @@
 	width: 100%;
 }
 
-.row1,
-.row2,
-.row3 {
+.player-info-row,
+.player-time-row,
+.player-nav-row {
 	align-items: center;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin-top: 1rem;
+}
+
+.player-nav-row {
+	justify-content: space-around;
 }
 
 .loader {
