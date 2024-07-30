@@ -7,6 +7,5 @@ export function Songs(): ReactElement {
 		<div className="songs">
 			{songdata.map((song) => (<Song data={song} key={song.id} />))}
 		</div>
-
 	);
 }

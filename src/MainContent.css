@@ -16,23 +16,84 @@
 
 .song {
 	align-items: center;
+	border-bottom: 0.4rem solid #122238;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 2rem;
 	padding-bottom: 2rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	border-bottom: 0.4rem solid #122238;
 }
 
 .song-image {
-	width: 20%;
+	max-width: 6rem;
 	height: auto;
+	width: 20%;
 }
 
 .player {
 	background-color: #17263d;
 	border-left: 0.2rem solid #a8bbbf;
 	color: whitesmoke;
+	display: flex;
+	flex-direction: column;
 	width: 100%;
+	padding-top: 2rem;
+	padding-inline: 2rem;
+}
+
+.song-image-large {
+	display: block;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.row1,
+.row2,
+.row3 {
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1rem;
+}
+
+.loader {
+	width: 100%;
+	height: 4.8px;
+	display: inline-block;
+	position: relative;
+	background: rgba(255, 255, 255, 0.15);
+	overflow: hidden;
+}
+
+.loader::after {
+	content: '';
+	box-sizing: border-box;
+	width: 0;
+	height: 4.8px;
+	background: #FFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: animFw 10s linear infinite;
+}
+
+@keyframes animFw {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
+
+.time-elapsed {
+	padding-right: 2rem;
+}
+
+.time-song-length {
+	padding-left: 2rem;
 }
