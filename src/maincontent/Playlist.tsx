@@ -2,11 +2,11 @@ import { ReactElement } from "react";
 import { ISong, Song } from "./Song";
 import { songdata } from "../data";
 
-interface PlaylistProps {
+interface IPlaylistProps {
 	onSongClick: (song: ISong) => void;
 }
 
-export function Playlist(prop: PlaylistProps): ReactElement {
+export function Playlist(prop: IPlaylistProps): ReactElement {
 	return (
 		<div className="playlist">
 			{songdata.map((song) =>

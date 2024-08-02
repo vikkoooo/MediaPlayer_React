@@ -1,12 +1,11 @@
 import { ReactElement } from "react";
-//import { songdata } from "../data";
 import { ISong } from "./Song";
 
-interface PlayerProps {
+interface IPlayerProps {
 	song: ISong;
 }
 
-export function Player(prop: PlayerProps): ReactElement {
+export function Player(prop: IPlayerProps): ReactElement {
 	return (
 		<div className="player">
 			<img src={prop.song.imagepath} className="song-image-large" />
